@@ -31,8 +31,8 @@ img_names = ['{i}.png'.format(i=i) for i in range(4)]
 
 # Load the pipeline
 pipeline = DiffusionPipeline.from_pretrained(
-    "../weight/zero123plus-v1.1", 
-    custom_pipeline="../weight/zero123plus-pipeline",
+    "ckpt/zero123plus-v1.1", 
+    custom_pipeline="../inference.py",
     torch_dtype=torch.float16
 )
 # Feel free to tune the scheduler
